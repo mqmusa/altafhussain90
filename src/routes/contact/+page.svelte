@@ -4,6 +4,8 @@ MQM International Secretariat (Temporary)
 Edgware
 Middlesex
 HA8 6QT
-+44 20 8952 7300
 United Kingdom
+
+Telephone: +44 20 8952 7300
+WhatsApp : +44 74 4029 8304 
 </pre>
