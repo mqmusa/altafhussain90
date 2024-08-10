@@ -159,7 +159,7 @@
             
 
            <Donate isCenter={false} id={1} />
-        </div>    
+        </div>
     </div>
 </section>
 
@@ -193,4 +193,3 @@
     {/each}
     {/if}
 </section>
-{/if}
