@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount, onDestroy } from 'svelte';
+    import { getCustomLink, getLink } from '$lib/paymentLinks';
 
     export let isCenter = false;
     /* [IMPORTANT]: Assign a unique ID for each Donate Modal or else they'll collide id's */    
@@ -50,19 +51,30 @@
 <p id="giftLabel{id}" class:text-center={isCenter} class="mb-5 mt-4 md:mt-8 font-bold tracking-tight leading-none text-2xl text-secondary-700 md:text-3xl xl:text-4xl dark:text-white">
     Gift for the Founder and Leader, Altaf Hussain
 </p>
-<!--
+
 <div class:flex={isCenter} class:inline-flex={!isCenter} class="flex-wrap flex-start justify-center gap-4">
     {#each [5, 10, 20, 50, 100] as amt, i}
         <button type="button" id="gift{i+1}{id}" class="focus:outline-none text-white bg-secondary-700 hover:bg-secondary-800 focus:ring-4 focus:ring-secondary-300 font-medium md:text-xl rounded-lg text-sm px-5 py-2.5 dark:bg-secondary-600 dark:hover:bg-secondary-700 dark:focus:ring-secondary-900">
-            ${amt}
+            <a href={getLink(amt)}>
+                ${amt}
+            </a>
         </button>
     {/each}
+    <button id="giftButton1" class="focus:outline-none text-secondary-600 bg-secondary-100 hover:bg-white font-medium md:text-xl rounded-lg text-sm px-5 py-2.5">
+        <a href={getCustomLink()}>
+            Other
+        </a>
+    </button>
+    <!--
     <input type="number" id="giftCustom{id}" class="text-xl rounded-lg" placeholder="Other">
+    -->
 </div>
--->
+
+<!--
 <button id="giftButton1" class="focus:outline-none text-white bg-secondary-700 hover:bg-secondary-800 focus:ring-4 focus:ring-secondary-300 font-medium md:text-xl rounded-lg text-sm px-5 py-2.5 dark:bg-secondary-600 dark:hover:bg-secondary-700 dark:focus:ring-secondary-900">
-    <a href="https://buy.stripe.com/6oE7t6bS9gTDdgc3cc">
+    <a href={getCustomLink()}>
         Gift Now
     </a>
 </button>
+-->
 
