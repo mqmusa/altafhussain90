@@ -61,7 +61,7 @@
         </button>
     {/each}
     <button id="giftButton1" class="focus:outline-none text-secondary-600 bg-secondary-100 hover:bg-white font-medium md:text-xl rounded-lg text-sm px-5 py-2.5">
-        <a href={getCustomLink()}>
+        <a href={getCustomLink((navigator.language || navigator.languages[0]))}>
             Other
         </a>
     </button>

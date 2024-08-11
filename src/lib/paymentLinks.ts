@@ -17,16 +17,11 @@ const customLinks: Record<string, string> = {
     "other": "https://donate.stripe.com/test_4gw041aBE2Q94ow002?locale="
 }
 
-function getLang() {
-    return navigator.language || navigator.languages[0];
-}
-
 export function getLink(amt: number) {
     return links[amt] || "";
 }
 
-export function getCustomLink() {
-    let locale = getLang();
+export function getCustomLink(locale: string) {
     if (locale in customLinks) {
         return customLinks[locale];
     } else {
