@@ -54,17 +54,17 @@
 
 <div class:flex={isCenter} class:inline-flex={!isCenter} class="flex-wrap flex-start justify-center gap-4">
     {#each [5, 10, 20, 50, 100] as amt, i}
-        <button type="button" id="gift{i+1}{id}" class="focus:outline-none text-white bg-secondary-700 hover:bg-secondary-800 focus:ring-4 focus:ring-secondary-300 font-medium md:text-xl rounded-lg text-sm px-5 py-2.5 dark:bg-secondary-600 dark:hover:bg-secondary-700 dark:focus:ring-secondary-900">
-            <a href={getLink(amt)}>
+        <a href={getLink(amt)}>
+            <button type="button" id="gift{i+1}{id}" class="focus:outline-none text-white bg-secondary-700 hover:bg-secondary-800 focus:ring-4 focus:ring-secondary-300 font-medium md:text-xl rounded-lg text-sm px-5 py-2.5 dark:bg-secondary-600 dark:hover:bg-secondary-700 dark:focus:ring-secondary-900">
                 ${amt}
-            </a>
-        </button>
-    {/each}
-    <button id="giftButton1" class="focus:outline-none text-secondary-600 bg-secondary-100 hover:bg-white font-medium md:text-xl rounded-lg text-sm px-5 py-2.5">
-        <a href={getCustomLink((navigator.language || navigator.languages[0]))}>
-            Other
+            </button>
         </a>
-    </button>
+    {/each}
+    <a href={getCustomLink((navigator.language || navigator.languages[0]))}>
+        <button id="giftButton1" class="focus:outline-none text-secondary-600 bg-secondary-100 hover:bg-white font-medium md:text-xl rounded-lg text-sm px-5 py-2.5">
+            Other
+        </button>
+    </a>
     <!--
     <input type="number" id="giftCustom{id}" class="text-xl rounded-lg" placeholder="Other">
     -->
