@@ -1,5 +1,8 @@
 <script>
-    import Donate from "../Donate.svelte";
+    // import Donate from "../Donate.svelte";
 </script>
 
-<Donate isCenter={true} id={2}/>
+
+<!--
+    <Donate isCenter={true} id={2}/>
+-->

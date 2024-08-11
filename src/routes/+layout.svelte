@@ -27,7 +27,7 @@
                 <img src={logo} class="my-3 mr-3 h-9 sm:h-12 md:h-16 lg:h-20 2xl:h-24" alt="MQM Logo" />
             </NavBrand>
             <div class="flex md:order-2">
-                <a href="{base}/gift">
+                <a href="https://buy.stripe.com/6oE7t6bS9gTDdgc3cc">
                     <button type="button" class="text-sm md:text-md lg:text-lg xl:text-xl focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg px-5 py-2.5 mx-auto my-auto dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Gift</button>
                 </a>
                 <NavHamburger />

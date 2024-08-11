@@ -59,7 +59,7 @@
         heroState = 0;
 
         setInterval(() => {
-            //heroState = (heroState + 1) % 3;
+            heroState = (heroState + 1) % 3;
         }, 5000);
     });
 
