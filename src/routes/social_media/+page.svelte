@@ -62,10 +62,10 @@
 </style>
 
 <div class="bg-gradient-to-br from-green-600 py-8">
-    <section class="mx-auto flex flex-row sm:no-wrap gap-8">
+    <section class="mx-auto flex flex-rows justify-evenly flex-wrap gap-8">
         {#each Socials as social, i}
-            <a href={social.href} class="transCard block max-w my-auto p-6 rounded-lg">
-                <img src={social.img} style="" alt={social.href}>
+            <a href={social.href} class="transCard flex flex-col align-center md:block md:my-auto p-6 rounded-lg">
+                <img src={social.img} class="w-24 md:size-44" alt={social.href}>
                 <p class="font-mono text-center sm:text-md lg:text-lg xl:text-xl mt-1 sm:mt-4">{social.tag}</p>
             </a>
         {/each}

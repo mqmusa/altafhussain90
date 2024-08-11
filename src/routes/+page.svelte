@@ -6,7 +6,7 @@
     import { slide } from 'svelte/transition';
     import Donate from './Donate.svelte';
     import { base } from '$app/paths';
-    
+    import hd1 from '$lib/assets/hd1.png';
 
     const themeSizes = {
         "sm": 640,
@@ -59,7 +59,7 @@
         heroState = 0;
 
         setInterval(() => {
-            heroState = (heroState + 1) % 3;
+            //heroState = (heroState + 1) % 3;
         }, 5000);
     });
 
@@ -123,11 +123,23 @@
 
 <section id="hero" class="bg-gradient-to-br from-secondary-600">
     {#if heroState == 0}
-        <div    in:slide={{ delay: 1000, duration: animSpeed, axis: 'x' }}
-                out:slide={{ delay: 0, duration: animSpeed, axis: 'x' }}
-                id="hero1" class="hero">
-            <h1 class="pl-4 pb-4 md:pb-8 text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold italic">Founder and Leader of MQM,</h1>
-            <h1 class="pl-8 md:pl-16 xl:pl-24 text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-display">Mr. Altaf Hussain</h1>
+        <div    class="hero hidden md:block" id="hero1"
+                in:slide={{ delay: 1000, duration: animSpeed, axis: 'x' }}
+                out:slide={{ delay: 0, duration: animSpeed, axis: 'x' }}>
+            <div class="md:grid md:grid-rows-3 h-full w-full">
+                <h1 class="pl-4 text-white text-4xl md:mt-4 md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold italic">Founder and Leader of MQM,</h1>
+                <div />
+                <h1 class="self-end text-center md:mb-4 md:text-left md:pl-16 xl:pl-24 text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-display">Mr. Altaf Hussain</h1>
+            </div>
+        </div>
+        <div    class="hero block md:hidden"
+                in:slide={{ delay: 1000, duration: animSpeed, axis: 'x' }}
+                out:slide={{ delay: 0, duration: animSpeed, axis: 'x' }}>
+            <div class="flex flex-col h-full w-full">
+                <h1 class="text-center text-white text-4xl font-bold italic">Founder and Leader of MQM,</h1>
+                <h1 class="text-center text-white text-4xl font-bold font-display">Mr. Altaf Hussain</h1>
+                <img alt="Altaf Hussain" src={hd1}>
+            </div>
         </div>
     {:else if heroState == 1}
         <div    in:slide={{ delay: 1000, duration: animSpeed, axis: 'x' }}
