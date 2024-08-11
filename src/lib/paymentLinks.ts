@@ -1,6 +1,10 @@
 // For predetermined links
 const links: Record<number, string> = {
-    5: "https://donate.stripe.com/test_fZe3gdfVYgGZ9IQ14b"
+    5: "https://donate.stripe.com/test_fZe3gdfVYgGZ9IQ14b",
+    10: "",
+    20: "",
+    50: "",
+    100: ""
 }
 
 // For the "custom amount" links
