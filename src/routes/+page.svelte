@@ -166,7 +166,7 @@
                 Thank you for Gifting
             </h1>
             <h1 class="max-w-2xl mb-5 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-primary-600 dark:text-green-300">
-                For Your Loving Quaid
+                For Your Beloved Quaid
             </h1>
             
 
