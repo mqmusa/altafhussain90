@@ -1,20 +1,20 @@
 // For predetermined links
 const links: Record<number, string> = {
-    5: "https://donate.stripe.com/test_fZe3gdfVYgGZ9IQ14b",
-    10: "",
-    20: "",
-    50: "",
-    100: ""
+    5: "https://buy.stripe.com/28o00E4pH0UF4JGeUY",
+    10: "https://buy.stripe.com/aEUfZCf4l0UFekg9AF",
+    20: "https://buy.stripe.com/7sI3cQe0hfPz1xu8wC",
+    50: "https://buy.stripe.com/6oE00E09ravf2BycMT",
+    100: "https://buy.stripe.com/7sI00E7BTeLvekgdQY"
 }
 
 // For the "custom amount" links
 const customLinks: Record<string, string> = {
-    "en-GB": "https://donate.stripe.com/test_dR6aIFbFIeyRf3a4gh",
-    "en-US": "https://donate.stripe.com/test_8wM041bFIgGZbQY3cf",
-    "en-CA": "https://donate.stripe.com/test_3cs7wtdNQaiB08g3cg",
-    "en-PK": "https://donate.stripe.com/test_aEU6speRUduNbQY4gl",
-    "ur-PK": "https://donate.stripe.com/test_aEU6speRUduNbQY4gl",
-    "other": "https://donate.stripe.com/test_4gw041aBE2Q94ow002?locale="
+    "en-GB": "https://buy.stripe.com/6oE7t6bS9gTDdgc3cc",
+    "en-US": "https://buy.stripe.com/dR65kYbS97j35NK3cd",
+    "en-CA": "https://buy.stripe.com/dR65kY5tLdHr7VS4gi",
+    "en-PK": "https://buy.stripe.com/6oEaFi7BT1YJ1xubIL",
+    "ur-PK": "https://buy.stripe.com/6oEaFi7BT1YJ1xubIL",
+    "other": "https://buy.stripe.com/6oE7t6bS9gTDdgc3cc?locale="
 }
 
 export function getLink(amt: number) {
