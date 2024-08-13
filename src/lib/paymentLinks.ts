@@ -1,6 +1,6 @@
 // For predetermined links
 const links: Record<number, string> = {
-    5: "https://buy.stripe.com/28o00E4pH0UF4JGeUY",
+    5: "https://buy.stripe.com/fZefZCg8peLv1xuaEN",
     10: "https://buy.stripe.com/aEUfZCf4l0UFekg9AF",
     20: "https://buy.stripe.com/7sI3cQe0hfPz1xu8wC",
     50: "https://buy.stripe.com/6oE00E09ravf2BycMT",
