@@ -7,8 +7,8 @@
     export let id: number;
 
     let curGift = 0;
-    //const gifts = ["giftLabel", "gift1", "gift2", "gift3", "gift4", "gift5", "giftCustom"];
-    const gifts = ["giftLabel", "giftButton"];
+    const gifts = ["giftLabel", "gift1", "gift2", "gift3", "gift4", "gift5", "giftCustom"];
+    //const gifts = ["giftLabel", "giftButton"];
     const blinkTime = 300;
 
     function blink3() {
@@ -61,7 +61,7 @@
         </a>
     {/each}
     <a href={getCustomLink((navigator.language || navigator.languages[0]))}>
-        <button id="giftButton1" class="focus:outline-none text-secondary-600 bg-secondary-100 hover:bg-white font-medium md:text-xl rounded-lg text-sm px-5 py-2.5">
+        <button id="giftCustom{id}" class="focus:outline-none text-secondary-600 bg-secondary-100 hover:bg-white font-medium md:text-xl rounded-lg text-sm px-5 py-2.5">
             Other
         </button>
     </a>
