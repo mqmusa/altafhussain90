@@ -1,10 +1,10 @@
 // For predetermined links
 const links: Record<number, string> = {
     5: "https://buy.stripe.com/fZefZCg8peLv1xuaEN",
-    10: "https://buy.stripe.com/aEUfZCf4l0UFekg9AF",
-    20: "https://buy.stripe.com/7sI3cQe0hfPz1xu8wC",
-    50: "https://buy.stripe.com/6oE00E09ravf2BycMT",
-    100: "https://buy.stripe.com/7sI00E7BTeLvekgdQY"
+    10: "https://buy.stripe.com/eVa14I5tL8n78ZWbIS",
+    20: "https://buy.stripe.com/3cs00E5tL8n71xubIT",
+    50: "https://buy.stripe.com/28obJmg8p6eZekgaEQ",
+    100: "https://buy.stripe.com/aEU7t6bS9gTDa4000d"
 }
 
 // For the "custom amount" links
