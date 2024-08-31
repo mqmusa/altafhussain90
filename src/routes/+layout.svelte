@@ -12,10 +12,10 @@
     let nonActiveClass = 'text-gray-700 border-green-300 hover:bg-green-300 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-green-300 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent';
 </script>
 
-<h1 class="text-center mt-4 text-xl">
+<h1 class="text-center mt-4 text-3xl">
     🚧 Under Construction 🚧
 </h1>
-<h2 class="text-center text-xl">
+<h2 class="text-center text-3xl">
     See You Soon! 👋
 </h2>
 
