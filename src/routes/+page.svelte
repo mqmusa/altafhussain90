@@ -159,6 +159,8 @@
 <hr>
 <hr>
 
+
+<!--
 <section class="bg-gradient-to-tr from-primary-600">
     <div class="max-w-screen-xl mx-auto py-8 md:py-16">
         <div class="flex flex-col place-self-center items-center text-center">
@@ -174,6 +176,7 @@
         </div>
     </div>
 </section>
+-->
 
 <hr>
 <hr>
