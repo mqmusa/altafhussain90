@@ -12,15 +12,6 @@
     let nonActiveClass = 'text-gray-700 border-green-300 hover:bg-green-300 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-green-300 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent';
 </script>
 
-<h1 class="text-center mt-4 text-3xl">
-    🚧 Under Construction 🚧
-</h1>
-<h2 class="text-center text-3xl">
-    See You Soon! 👋
-</h2>
-
-
-<!--
 <Navbar let:NavContainer class="p-0 sm:mx-0 md:mx-0 m-0 bg-green-600 dark:bg-gray-800 text-primary-800 dark:text-green-400 border-0 divide-primary-500 dark:divide-primary-200 w-full">
     <NavContainer class="border-0 mx-0!important  rounded-lg bg-green-600 dark:bg-gray-600">
         <div class="mx-auto flex flex-wrap justify-between items-center container">
@@ -84,4 +75,3 @@
         </FooterIcon>
     </div>
 </Footer>
--->
